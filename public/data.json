@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "UV Protection Sunglasses",
+    "brand": "SunShade",
+    "price": 15,
+    "rating": 4.7,
+    "stock": 10,
+    "description": "Stylish UV protection sunglasses perfect for summer outings.",
+    "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083",
+    "category": "Accessories"
+  },
+  {
+    "id": 2,
+    "name": "Beach Straw Hat",
+    "brand": "AquaStyle",
+    "price": 12,
+    "rating": 4.5,
+    "stock": 8,
+    "description": "Lightweight straw hat to keep you cool under the sun.",
+    "image": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b",
+    "category": "Accessories"
+  },
+  {
+    "id": 3,
+    "name": "Summer Floral Shirt",
+    "brand": "SunWear",
+    "price": 20,
+    "rating": 4.6,
+    "stock": 15,
+    "description": "Comfortable and breathable floral shirt for hot summer days.",
+    "image": "https://images.unsplash.com/photo-1520975922323-3c5dfe1c9a7a",
+    "category": "Clothing"
+  },
+  {
+    "id": 4,
+    "name": "SPF 50 Sunscreen Lotion",
+    "brand": "GlowCare",
+    "price": 10,
+    "rating": 4.8,
+    "stock": 20,
+    "description": "High protection sunscreen to keep your skin safe from UV rays.",
+    "image": "https://images.unsplash.com/photo-1596464716127-f2a82984de30",
+    "category": "Skincare"
+  },
+  {
+    "id": 5,
+    "name": "Beach Flip Flops",
+    "brand": "WaveWalk",
+    "price": 9,
+    "rating": 4.4,
+    "stock": 18,
+    "description": "Comfortable flip flops perfect for beach and casual wear.",
+    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c",
+    "category": "Footwear"
+  },
+  {
+    "id": 6,
+    "name": "Portable Water Bottle",
+    "brand": "HydroMax",
+    "price": 8,
+    "rating": 4.6,
+    "stock": 25,
+    "description": "Stay hydrated with this reusable and eco-friendly water bottle.",
+    "image": "https://images.unsplash.com/photo-1526403229125-90e9a2c7d9f3",
+    "category": "Accessories"
+  }
+]
