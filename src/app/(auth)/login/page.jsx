@@ -10,8 +10,8 @@ const LoginPage = () => {
     const [isShowPassword, setisShowPassword] = useState(false)
 
     return (
-        <div className='min-h-screen bg-linear-to-tr from-blue-700/10 via-transparent to-yellow-700/10 overflow-hidden'>
-            <div className='relative z-10 space-y-4 max-w-md mx-auto top-32 rounded-md bg-white shadow-sm p-9'>
+        <div className='min-h-[calc(100vh-100px)] flex items-center justify-center bg-linear-to-tr from-blue-700/10 via-transparent to-yellow-700/10 overflow-hidden'>
+            <div className='w-full space-y-4 max-w-md mx-auto rounded-md bg-white shadow-md p-9'>
                 <div className='flex items-center justify-center'>
                     <TbSunHigh className='text-4xl font-light rounded-full bg-yellow-500/70 w-16 h-16 p-4' />
                 </div>
