@@ -2,9 +2,6 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-
-import { HiOutlineSun } from 'react-icons/hi';
-import { LiaSunSolid } from 'react-icons/lia';
 import { TbSunHigh } from 'react-icons/tb';
 
 
