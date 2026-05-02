@@ -20,24 +20,30 @@ const RegisterPage = () => {
     } = useForm();
 
 
-    const handleRegisterFunc = async (data) =>{
+    const handleRegisterFunc = async (data) => {
         // console.log(data, "data")
-        const {name, photo, email, password} = data;
+        const { name, photo, email, password } = data;
 
-        const {data:res, error} = await authClient.signUp.email({
+        const { data: res, error } = await authClient.signUp.email({
             name: name, // required
             email: email, // required
             password: password, // required
             image: photo,
             callbackURL: "/",
-        }) 
+        })
 
-        if(error){
-             toast.error(error.message);
+        if (error) {
+            toast.error(error.message);
         }
-        if(res){
+        if (res) {
             alert("SignUp Successfull")
         }
+    }
+
+    const handleGoogleSignIn = async() => {
+        const data = await authClient.signIn.social({
+            provider: "google",
+        });
     }
 
     return (
@@ -49,7 +55,7 @@ const RegisterPage = () => {
                 <h1 className='text-center text-3xl font-semibold text-yellow-500/70'>SunCart</h1>
                 <p className='text-center text-base text-gray-800'>Register your account</p>
                 <div className='flex items-center justify-center'>
-                    <button className='btn border border-blue-500 text-blue-500'>Continue With Google</button>
+                    <button className='btn border border-blue-500 text-blue-500' onClick={handleGoogleSignIn}>Continue With Google</button>
                 </div>
                 <hr className='text-gray-300' />
                 <div>
@@ -58,12 +64,12 @@ const RegisterPage = () => {
                             <legend className="fieldset-legend">Name</legend>
                             <input type="text" className="input w-full" name="name" placeholder="Enter Your name" {...register("name", { required: "name is required" })} />
                             {errors.name && <p className='text-red-500'>{errors.name.message}</p>}
-                            
+
                         </fieldset>
                         <fieldset className="fieldset">
                             <legend className="fieldset-legend">Photo Url</legend>
                             <input type="text" className="input w-full" name="photo" placeholder="Enter Your Photo URL" {...register("photo", { required: "photo is required" })} />
-                           {errors.photo && <p className='text-red-500'>{errors.photo.message}</p>}
+                            {errors.photo && <p className='text-red-500'>{errors.photo.message}</p>}
                         </fieldset>
                         <fieldset className="fieldset">
                             <legend className="fieldset-legend">Email</legend>

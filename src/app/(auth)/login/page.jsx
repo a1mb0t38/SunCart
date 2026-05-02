@@ -15,24 +15,30 @@ const LoginPage = () => {
     const {
         register,
         handleSubmit,
-        formState: {errors},
+        formState: { errors },
     } = useForm();
 
-    const handleLoginFunc = async (data) =>{
+    const handleLoginFunc = async (data) => {
         // console.log(data, "data")
-        const {data:res, error} = await authClient.signIn.email({
+        const { data: res, error } = await authClient.signIn.email({
             name: data.name,
             email: data.email,
             password: data.password,
             callbackURL: '/',
         })
 
-         if(error){
+        if (error) {
             toast.error(error.message);
         }
-        if(res){
+        if (res) {
             alert("Wellcome to our news site")
         }
+    }
+
+    const handleGoogleSignIn =async () => {
+        const data = await authClient.signIn.social({
+            provider: "google",
+        });
     }
 
     return (
@@ -44,21 +50,21 @@ const LoginPage = () => {
                 <h1 className='text-center text-3xl font-semibold text-yellow-500/70'>SunCart</h1>
                 <p className='text-center text-base text-gray-800'>Login to your account</p>
                 <div className='flex items-center justify-center'>
-                <button className='btn border border-blue-500 text-blue-500'>Continue With Google</button>
+                    <button className='btn border border-blue-500 text-blue-500' onClick={handleGoogleSignIn}>Continue With Google</button>
                 </div>
                 <hr className='text-gray-300' />
                 <div>
                     <form onSubmit={handleSubmit(handleLoginFunc)}>
                         <fieldset className="fieldset">
                             <legend className="fieldset-legend">Email</legend>
-                            <input type="email" className="input w-full" placeholder="Enter Your Email" {...register("email",{ required: "Email is required" })} />
+                            <input type="email" className="input w-full" placeholder="Enter Your Email" {...register("email", { required: "Email is required" })} />
                             {errors.email && <p className='text-red-500'>{errors.email.message}</p>}
                         </fieldset>
 
                         <fieldset className="fieldset relative">
                             <legend className="fieldset-legend">Password</legend>
-                            <input type={isShowPassword ? "text" : "password"} className="input w-full" placeholder="Enter Your Password" {...register("password",{ required: "Must put your password" })} />
-                            <span className='absolute right-1 top-4 mr-2 cursor-pointer' onClick={()=>setisShowPassword(!isShowPassword)}>{isShowPassword ? <FaEye></FaEye> : <FaEyeSlash></FaEyeSlash>}</span>
+                            <input type={isShowPassword ? "text" : "password"} className="input w-full" placeholder="Enter Your Password" {...register("password", { required: "Must put your password" })} />
+                            <span className='absolute right-1 top-4 mr-2 cursor-pointer' onClick={() => setisShowPassword(!isShowPassword)}>{isShowPassword ? <FaEye></FaEye> : <FaEyeSlash></FaEyeSlash>}</span>
                             {errors.email && <p className='text-red-500'>{errors.email.message}</p>}
                         </fieldset>
                         <button className='btn w-full mt-3.5 bg-amber-500/70 font-semibold'>SignIn</button>
