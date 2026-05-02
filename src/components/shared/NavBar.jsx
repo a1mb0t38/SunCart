@@ -34,7 +34,7 @@ const NavBar = () => {
                 {isPending ? <span className="loading loading-spinner text-error"></span> : user ? (<div className='flex items-center gap-3'>
                 <span className='text-yellow-700'>Hello {user?.name}</span>
                 <Image className='rounded-full' src={user?.image || Img} width={50} height={50} alt='user image'></Image>
-                <button className='btn text-yellow-800 bg-amber-500/70' onClick={ async()=> await authClient.signOut()}>logout</button>
+                <button className='btn text-yellow-800 bg-amber-500/70' onClick={ async()=> await authClient.signOut()}><Link href={'/home'}>logout</Link></button>
             </div>) : (<button className='btn text-yellow-800 bg-amber-500/70'><Link href={'/login'}>Login</Link></button>) }
             </div>
             
