@@ -24,7 +24,7 @@ const Banner = () => {
                         Grab your summer essentials at unbeatable prices. <br />
                         Stay cool, Stay stylish
                     </p>
-                    <button className="btn bg-amber-500/70">Shop Now</button>
+                    <button className="btn bg-amber-500/70 text-yellow-800">Shop Now</button>
                 </div>
             </div>
 
