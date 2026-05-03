@@ -1,12 +1,13 @@
+import Image from 'next/image';
 import React from 'react';
 
 const ProductCard = ({product}) => {
     return (
-        <div className="card bg-white w-96 shadow-md">
-            <figure>
-                <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes" />
+        <div className="card bg-white w-96 shadow-[0_4px_20px_rgba(252,191,36,0.3)] h-full">
+            <figure className='w-full aspect-[4/3] overflow-hidden rounded-md p-2'>
+                <Image
+                    src={product.image}
+                    alt="Shoes" width={400} height={300} className='w-full h-full object-cover' />
             </figure>
             <div className="card-body">
                 <div className='flex justify-between items-center'>

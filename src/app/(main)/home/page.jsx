@@ -8,7 +8,7 @@ import Link from 'next/link';
 const HomePage = async () => {
 
     const products = await getProducts()
-    console.log(products, "products");
+    
 
     return (
         <div>

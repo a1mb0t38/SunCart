@@ -4,7 +4,7 @@ import banner from '@/assets/banner.png';
 const Banner = () => {
     return (
         <div
-            className="hero container mx-auto rounded-lg min-h-1/3 mt-4 bg-white shadow-md"
+            className="hero container mx-auto rounded-lg min-h-1/3 mt-4 bg-white shadow-[0_4px_20px_rgba(252,191,36,0.3)]"
             style={{
                 backgroundImage: `url(${banner.src})`,
             }}

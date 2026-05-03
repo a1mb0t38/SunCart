@@ -43,7 +43,7 @@ const LoginPage = () => {
 
     return (
         <div className='min-h-[calc(100vh-100px)] flex items-center justify-center bg-linear-to-tr from-blue-700/10 via-transparent to-yellow-700/10 overflow-hidden'>
-            <div className='w-full space-y-4 max-w-md mx-auto rounded-md bg-white shadow-md p-9'>
+            <div className='w-full space-y-4 max-w-md mx-auto rounded-md bg-white shadow-[0_4px_20px_rgba(252,191,36,0.3)] p-9'>
                 <div className='flex items-center justify-center'>
                     <TbSunHigh className='text-4xl font-light rounded-full bg-yellow-500/70 w-16 h-16 p-4' />
                 </div>
