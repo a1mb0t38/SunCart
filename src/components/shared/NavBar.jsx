@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { TbSunHigh } from 'react-icons/tb';
 import NavLink from './NavLink';
 import { authClient } from '@/lib/auth-client';
+import 'animate.css';
+
 
 const NavBar = () => {
 
@@ -17,7 +19,7 @@ const NavBar = () => {
     return (
         <div className='flex justify-between items-center bg-linear-to-tr from-blue-700/10 via-transparent to-yellow-700/10 rounded-sm'>
             <div>
-                <div className='flex items-center gap-3.5 p-4'>
+                <div className='flex items-center gap-3.5 p-4 animate__animated animate__swing'>
                     <TbSunHigh className='text-4xl font-light rounded-full bg-yellow-500/70 w-16 h-16 p-4' />
                     <h1 className='text-2xl font-semibold text-yellow-500/70'><Link href={'/home'}>SunCart</Link></h1>
                 </div>

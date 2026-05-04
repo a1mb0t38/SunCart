@@ -5,6 +5,7 @@ import { getProducts } from '@/lib/data';
 import ProductCard from '@/components/shared/ProductCard';
 import Link from 'next/link';
 import Image from 'next/image';
+import 'animate.css';
 
 const HomePage = async () => {
 
@@ -12,7 +13,7 @@ const HomePage = async () => {
 
 
     return (
-        <div>
+        <div className='animate__animated animate__backInUp'>
             <Banner></Banner>
             <div className='flex items-center justify-between container mx-auto mt-6'>
                 <div></div>
