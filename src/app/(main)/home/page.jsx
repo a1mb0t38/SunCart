@@ -29,7 +29,7 @@ const HomePage = async () => {
                     })
                 }
             </main>
-            <div className='container mx-auto flex items-center gap-9 mt-4 shadow-[0_4px_20px_rgba(252,191,36,0.3)] p-9 mb-9'>
+            <div className='container mx-auto flex flex-col md:flex-row items-center gap-9 mt-4 shadow-[0_4px_20px_rgba(252,191,36,0.3)] p-9 mb-9'>
                 <div className='space-y-3'>
                     <div>
                         <Image className='rounded-2xl' src={'https://images.unsplash.com/photo-1556942040-df93bd3bdd19?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'} alt='beauti tips' width={400} height={400}></Image>

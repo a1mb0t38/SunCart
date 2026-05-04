@@ -8,7 +8,7 @@ const ProductsPage = async () => {
 
     return (
         <div>
-           <main className='container mx-auto grid grid-cols-3 gap-4 mt-6'>
+           <main className='container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 mt-6'>
                 
                 {
                     products.map((product) => {
