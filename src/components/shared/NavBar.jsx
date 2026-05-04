@@ -10,7 +10,7 @@ import { authClient } from '@/lib/auth-client';
 const NavBar = () => {
 
     const {data:session, isPending} = authClient.useSession()
-    console.log(session, "session")
+    // console.log(session, "session")
     const  user = session?.user;
 
 

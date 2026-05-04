@@ -12,12 +12,12 @@
   },
   {
     "id": 2,
-    "name": "Beach Straw Hat",
+    "name": "Beach t-shirt",
     "brand": "AquaStyle",
     "price": 12,
     "rating": 4.5,
     "stock": 8,
-    "description": "Lightweight straw hat to keep you cool under the sun.",
+    "description": "Lightweight t-shirt for summer vibe.",
     "image": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b",
     "category": "Accessories"
   },

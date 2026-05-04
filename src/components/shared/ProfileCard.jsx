@@ -13,11 +13,11 @@ const ProfileCard = () => {
 
     return (
         <div className='w-full max-w-[400vh] flex items-center justify-center gap-8 p-9'>
-                <div className='flex flex-col items-center bg-white shadow-md p-3 rounded-sm p-3'>
+                <div className='flex flex-col items-center bg-white shadow-[0_4px_20px_rgba(252,191,36,0.3)] p-3 rounded-sm p-3'>
                     <Image src={user?.image || Img} alt='user photo' width={400} height={400}></Image>
                     <p>{user?.name}</p>
                 </div>
-                <div className='space-y-2 bg-white shadow-md p-3 rounded-sm max-w-[100vh] h-[50vh] w-full p-9'>
+                <div className='space-y-2 bg-white shadow-[0_4px_20px_rgba(252,191,36,0.3)] p-3 rounded-sm max-w-[100vh] h-[50vh] w-full p-9'>
                     <h1 className='font-bold text-4xl'>Personal Details</h1>
                     <p className='font-semibold text-2xl'>Full Name:</p>
                     <div className='bg-gray-100 rounded-md shadow-md p-2'>

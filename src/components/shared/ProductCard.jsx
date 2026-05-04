@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const ProductCard = ({product}) => {
@@ -14,14 +15,14 @@ const ProductCard = ({product}) => {
                     <h2 className="card-title">{product.name}</h2>
                     <h2 className='border border-yellow-500 text-black cursor-pointer px-3.5 py-2 rounded-md font-semibold'>{product.brand}</h2>
                 </div>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                <p>{product.description}</p>
                 <div className='flex justify-between items-center'>
                     <p>Price: $15</p>
                     <p className='text-right pr-2'>Rating: 4.7</p>
                 </div>
                 <p>In Stoke: 90</p>
                 <div className="card-actions justify-end">
-                    <button className="btn text-yellow-800 bg-amber-500/70">View Details</button>
+                    <button className="btn text-yellow-800 bg-amber-500/70"><Link href={`/products/${product.id}`}>View Details</Link></button>
                 </div>
             </div>
         </div>
