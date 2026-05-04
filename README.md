@@ -16,18 +16,23 @@ bun dev
 
 Open [https://sun-cart-murex.vercel.app/](https://sun-cart-murex.vercel.app/) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+Details of the Project:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- the project has three nav link and a login button.
+- there is also resiter button if the user has no account.
+- used better Auth for login and registration.
+- also implemented google login.
+- used toastyfy npm packed in login to show errors.
+- used daisyUI
+- used react icons
+- used react form hook to handle login and register.
+- used nextjs proxy.
+- used Animate.css library
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
 
 ## Deploy on Vercel
 
